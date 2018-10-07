@@ -1,6 +1,5 @@
 .main-video{
     position: relative;
-    background-color: var(--color-grey-dark-1);
     overflow: hidden;
 }
 
