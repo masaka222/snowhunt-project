@@ -14,7 +14,7 @@
 }
 
 .main-content__title{
-    font-size: 10rem;
+    font-size: 12rem;
     letter-spacing: .2rem;
 }
 
@@ -26,6 +26,7 @@
 }
 
 .main-content__button{
+    position: relative;
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -34,4 +35,28 @@
     color: inherit;
     border-color: var(--color-primary);
     margin-top: 4rem;
+}
+
+.main-content__button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-primary);
+    transform: scaleY(0);
+    z-index: -1;
+    transition: width   .2s cubic-bezier(0,0,0,1),
+                background-color ;
+}
+
+.main-content__button:hover::before{
+    transform: scaleY(1);
+    width: 100%;
+}
+
+.main-content__button:hover{
+    color: white;
+    cursor: pointer;
 }
