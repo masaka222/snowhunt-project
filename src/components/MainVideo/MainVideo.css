@@ -1,0 +1,16 @@
+.main-video{
+    position: relative;
+    background-color: var(--color-grey-dark-1);
+    overflow: hidden;
+}
+
+.main-video__content{
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 110%;
+    object-fit: cover;
+}

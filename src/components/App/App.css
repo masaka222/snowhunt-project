@@ -35,5 +35,6 @@ body{
 .App {
   display: grid;
   grid-template-rows: [header-start] 6rem  [header-end full-start] calc(100vh - 6rem) [full-end]; 
+  grid-template-columns: 35vw 65vw;
 }
 
