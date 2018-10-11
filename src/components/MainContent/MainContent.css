@@ -72,8 +72,9 @@
     cursor: pointer;
 }
 
-/* ---- TEXT DISAPPEARING ANIMATION ---- */
+/* ---- BOX COVERING TEXT ANIMATION ---- */
 
+/* The blue box begins from position left 100% with 0 width */
 .main-content__title::after{
     content: "";
     position: absolute;
@@ -85,10 +86,27 @@
     transform: scaleY(0);
     transition: left  .3s  cubic-bezier(0,0,0,1),
                 width  .3s  cubic-bezier(0,0,0,1);
+                
 }
 
+/*  After the button is pressed, the text takes the class animated which changes
+    the width to 100% and scales it on the Y direction 100% */
 .animated::after{
     transform: scaleY(1);
     width: 100%;
     left: 0;
+}
+
+/* ---- BOX ERASING TEXT ANIMATION ---- */
+
+/* The width of the box becomes 0 */
+.animated2::after{
+    width: 0;
+}
+
+/* The text behind the box becomes transparent */
+.animated2{
+    color: transparent;
+    visibility: hidden;
+    transition: visibility .2s ease-in-out;
 }
