@@ -1,6 +1,7 @@
 .main-video{
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 .main-video__content{
@@ -12,4 +13,9 @@
     height: auto;
     width: 110%;
     object-fit: cover;
+}
+
+.animated3{
+    transform: translateX(-25%);
+    transition: all .3s ease-in-out;
 }
