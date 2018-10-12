@@ -15,7 +15,17 @@
     object-fit: cover;
 }
 
-.animated3{
+.animated3{/*
     transform: translateX(-25%);
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;*/
+    animation: image-movement .6s forwards ease-in-out;
+}
+
+@keyframes image-movement{
+    30%{
+        transform: translateX(-25%);
+    }
+    100%{
+        transform: translateX(-25%) scale(1.6);
+    }
 }
