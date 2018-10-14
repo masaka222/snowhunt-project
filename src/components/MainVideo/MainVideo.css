@@ -4,6 +4,17 @@
     z-index: -1;
 }
 
+.main-video__cloudsimg{
+    position: relative;
+    width: 100%;
+    top: 100%;
+}
+
+.animated4{
+    top: 35rem;
+    transition: top .5s cubic-bezier(0,0,0,1);
+}
+
 .main-video__content{
     position: absolute;
     margin: auto;
@@ -18,14 +29,21 @@
 .animated3{/*
     transform: translateX(-25%);
     transition: all .3s ease-in-out;*/
-    animation: image-movement .6s forwards ease-in-out;
+    animation: image-movement 1.2s forwards ease-in-out;
 }
 
 @keyframes image-movement{
     30%{
         transform: translateX(-25%);
     }
-    100%{
+    50%{
         transform: translateX(-25%) scale(1.6);
+    }
+    60%{
+        
+    }
+    100%{
+        transform: translateX(-25%) scale(1.6) translateY(-10%);
+        background-color: white;
     }
 }
