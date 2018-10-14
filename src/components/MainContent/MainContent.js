@@ -28,12 +28,16 @@ class MainContent extends Component {
         },500)
       
       setTimeout(function() {
-        document.getElementById('video').classList.add('animated3')
+        document.getElementById('video-container').classList.add('animated3')
         },500)
       
       setTimeout(function() {
         document.getElementById('image').classList.add('animated4')
         },1000)
+      
+      setTimeout(function() {
+          document.getElementById('video').classList.add('animated5')
+          },1350)
     }
 
     return (
