@@ -14,6 +14,10 @@ class MainVideo extends Component {
           Your browser is not supported!
         </video>
         <img src={clouds} alt="clouds" className="main-video__cloudsimg" id="image"/>
+        <div className="main-video__text">
+          <p className="main-video__title" id="main-title">Sierra Nevada</p>
+          <p className="main-video__subtitle" id="main-subtitle">Mountain Range, Spain</p>
+        </div>
       </div>
     );
   }

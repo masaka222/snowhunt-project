@@ -38,6 +38,14 @@ class MainContent extends Component {
       setTimeout(function() {
           document.getElementById('video').classList.add('animated5')
           },1350)
+
+      setTimeout(function() {
+          document.getElementById('main-title').classList.add('animated6')
+          },1500)
+
+      setTimeout(function() {
+          document.getElementById('main-subtitle').classList.add('animated6')
+          },1600)
     }
 
     return (

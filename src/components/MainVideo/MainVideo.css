@@ -10,17 +10,40 @@
     top: 100%;
 }
 
-.main-video__title{
-    position: relative;
-    font-size: 12rem;
-    letter-spacing: .2rem;
+.main-video__text{
+    position: absolute;
+    font-size: 5rem;
     font-family: 'Times New Roman', Times, serif;
     color: var(--color-primary);
+    backface-visibility: hidden;
+
+    /* Center Positioning of text*/
+    text-align: center;
+    width: 100%;
+    top: 55vh;
+    /*visibility: hidden;*/
+}
+
+.main-video__title{
+    font-size: 5rem;
     visibility: hidden;
 }
 
-.animated4{
-    top: 29rem;
+.main-video__subtitle{
+    font-size: .2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    visibility: hidden;
+}
+
+.animated6{
+    animation: moveInBottom .4s ease-out;
+    visibility: visible;
+}
+
+.animated4{/*
+    top: 29rem;*/
+    top: 35vh;
     transition: top .5s cubic-bezier(0,0,0,1);
 }
 
@@ -42,6 +65,8 @@
     animation: image-movement 1.2s forwards ease-in-out;*/
     animation: image-movement .6s forwards ease-in-out;
 }
+
+/* ---- ANIMATIONS ---- */
 
 @keyframes image-movement{/*
     30%{
@@ -66,8 +91,26 @@
     }
 }
 
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 .animated5{
     top: 10;
     transform: translateX(-50%) translateY(-62%);
     transition: all .5s cubic-bezier(0,0,0,1);
 }
+
+@media only screen and (max-width: 75em){
+    .animated4{
+        top: 41vh;
+    }
+  }
+  
