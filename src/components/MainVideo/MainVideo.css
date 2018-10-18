@@ -25,15 +25,15 @@
 }
 
 .main-video__title{
-    font-size: 5rem;
-    visibility: hidden;
+    font-size: 5rem;/*
+    visibility: hidden;*/
 }
 
 .main-video__subtitle{
     font-size: .2rem;
     text-transform: uppercase;
-    letter-spacing: .2rem;
-    visibility: hidden;
+    letter-spacing: .2rem;/*
+    visibility: hidden;*/
 }
 
 .animated6{
@@ -58,35 +58,34 @@
     object-fit: cover;
 }
 
-.animated3{/*
-    transform: translateX(-25%);
-    transition: all .3s ease-in-out;*/
-    /*
-    animation: image-movement 1.2s forwards ease-in-out;*/
+.animated3{
     animation: image-movement .6s forwards ease-in-out;
+}
+.animated7{
+    overflow-x: visible;
+    overflow-y: hidden;
+    animation: image-movement2 .5s forwards ease-in-out;
 }
 
 /* ---- ANIMATIONS ---- */
 
-@keyframes image-movement{/*
-    30%{
+@keyframes image-movement{
+    50%{
         transform: translateX(-25%);
     }
-    50%{
-        transform: translateX(-25%) scale(1.6);
-    }
-    60%{
-        
-    }
     100%{
-        transform: translateX(-25%) scale(1.6) translateY(-10%);
+        transform: translateX(-25%) scale(1.6);
         background-color: white;
-    }*/
-    50%{
-        transform: translateX(-25%);
+    }
+}
+
+@keyframes image-movement2{
+    0%{
+        transform: translateX(-25%) scale(1.6);
+        background-color: white;
     }
     100%{
-        transform: translateX(-25%) scale(1.6);
+        transform: translateX(-25%) scale(1.6) translateY(-25%);
         background-color: white;
     }
 }
@@ -112,5 +111,25 @@
     .animated4{
         top: 41vh;
     }
-  }
-  
+}
+
+/* ----  GRID ---- */
+.main-video__grid{
+    margin-top: 10rem;
+    padding: 15rem;
+    padding-left: 20rem;
+    padding-right: 25rem;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 5rem;
+}
+
+.main-video__grid-image{
+    height: 25rem;
+}
+
+.main-video__grid-text{
+    font-size: .2rem;
+    text-align: left;
+}
