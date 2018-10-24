@@ -7,7 +7,7 @@ import MainVideo from '../MainVideo/MainVideo';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" id ="app">
         <Header />
         <MainContent />
         <MainVideo />

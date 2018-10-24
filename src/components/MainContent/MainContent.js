@@ -50,6 +50,10 @@ class MainContent extends Component {
       setTimeout(function() {
           document.getElementById('video-container').classList.add('animated7')
           },2100)
+      
+      setTimeout(function() {
+          document.getElementById('body').classList.add('animated8')
+          },2100)
     }
 
     return (

@@ -5,7 +5,7 @@
 }
 
 .main-video__cloudsimg{
-    position: relative;
+    position: absolute;
     width: 100%;
     top: 100%;
 }
@@ -25,15 +25,15 @@
 }
 
 .main-video__title{
-    font-size: 5rem;/*
-    visibility: hidden;*/
+    font-size: 5rem;
+    visibility: hidden;
 }
 
 .main-video__subtitle{
     font-size: .2rem;
     text-transform: uppercase;
-    letter-spacing: .2rem;/*
-    visibility: hidden;*/
+    letter-spacing: .2rem;
+    visibility: hidden;
 }
 
 .animated6{
@@ -62,9 +62,11 @@
     animation: image-movement .6s forwards ease-in-out;
 }
 .animated7{
-    overflow-x: visible;
-    overflow-y: hidden;
+    overflow: visible;
     animation: image-movement2 .5s forwards ease-in-out;
+}
+.animated8{
+    background-color: white;
 }
 
 /* ---- ANIMATIONS ---- */
@@ -115,7 +117,7 @@
 
 /* ----  GRID ---- */
 .main-video__grid{
-    margin-top: 10rem;
+    margin-top: 40rem;
     padding: 15rem;
     padding-left: 20rem;
     padding-right: 25rem;
@@ -127,9 +129,11 @@
 
 .main-video__grid-image{
     height: 25rem;
+    visibility: hidden;
 }
 
 .main-video__grid-text{
     font-size: .2rem;
     text-align: left;
+    visibility: hidden;
 }
