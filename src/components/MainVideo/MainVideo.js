@@ -14,13 +14,15 @@ class MainVideo extends Component {
           <source src={videowebm} type="video/webm"/>
           Your browser is not supported!
         </video>
-        <img src={clouds} alt="clouds" className="main-video__cloudsimg" id="image"/>
+        <img src={clouds} alt="clouds" className="main-video__cloudsimg" id="cloudimage"/>
         <div className="main-video__text">
           <p className="main-video__title" id="main-title">Sierra Nevada</p>
           <p className="main-video__subtitle" id="main-subtitle">Mountain Range, Spain</p>
         </div>
         <div className="main-video__grid">
-          <img src={image} alt="Man on Mountain" className="main-video__grid-image"/>
+        <div className="main-video__grid-shape">
+          <img src={image} alt="Man on Mountain" className="main-video__grid-image" id="gridimage"/>
+        </div>
           <p className="main-video__grid-text">
             Lorem ipsum dolor sit amet consectetur adipiscing elit viverra, 
             aliquet ad odio aenean porta risus nec nulla, ullamcorper imperdiet 

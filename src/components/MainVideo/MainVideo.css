@@ -69,6 +69,40 @@
     background-color: white;
 }
 
+/* ----  GRID ---- */
+.main-video__grid{
+    margin-top: 40rem;
+    padding: 15rem;
+    padding-left: 20rem;
+    padding-right: 25rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 5rem;
+}
+
+.main-video__grid-shape{
+    overflow: hidden;
+    width: 16.5rem;
+    height: 25rem;
+}
+.main-video__grid-image{
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-1.5rem) scale(2);
+}
+
+.main-video__grid-text{
+    font-size: .2rem;
+    text-align: left;
+    visibility: hidden;
+}
+
+.animated9{
+    opacity: 1;
+    transform: translateX(-1.5rem) scale(1);
+    visibility: visible;
+    transition: all .5s cubic-bezier(0,0,0,1) .2s;
+}
 /* ---- ANIMATIONS ---- */
 
 @keyframes image-movement{
@@ -113,27 +147,4 @@
     .animated4{
         top: 41vh;
     }
-}
-
-/* ----  GRID ---- */
-.main-video__grid{
-    margin-top: 40rem;
-    padding: 15rem;
-    padding-left: 20rem;
-    padding-right: 25rem;
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-column-gap: 5rem;
-}
-
-.main-video__grid-image{
-    height: 25rem;
-    visibility: hidden;
-}
-
-.main-video__grid-text{
-    font-size: .2rem;
-    text-align: left;
-    visibility: hidden;
 }

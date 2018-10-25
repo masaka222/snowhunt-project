@@ -32,7 +32,7 @@ class MainContent extends Component {
         },500)
       
       setTimeout(function() {
-        document.getElementById('image').classList.add('animated4')
+        document.getElementById('cloudimage').classList.add('animated4')
         },1000)
       
       setTimeout(function() {
@@ -53,6 +53,10 @@ class MainContent extends Component {
       
       setTimeout(function() {
           document.getElementById('body').classList.add('animated8')
+          },2100)
+
+      setTimeout(function() {
+          document.getElementById('gridimage').classList.add('animated9')
           },2100)
     }
 
