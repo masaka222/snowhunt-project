@@ -20,10 +20,10 @@ class MainVideo extends Component {
           <p className="main-video__subtitle" id="main-subtitle">Mountain Range, Spain</p>
         </div>
         <div className="main-video__grid">
-        <div className="main-video__grid-shape">
-          <img src={image} alt="Man on Mountain" className="main-video__grid-image" id="gridimage"/>
-        </div>
-          <p className="main-video__grid-text">
+          <div className="main-video__grid-shape">
+            <img src={image} alt="Man on Mountain" className="main-video__grid-image" id="gridimage"/>
+          </div>
+          <p className="main-video__grid-text" id="gridtext">
             Lorem ipsum dolor sit amet consectetur adipiscing elit viverra, 
             aliquet ad odio aenean porta risus nec nulla, ullamcorper imperdiet 
             luctus sollicitudin fames parturient dapibus. Magnis quis fusce tempor 

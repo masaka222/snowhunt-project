@@ -36,11 +36,6 @@
     visibility: hidden;
 }
 
-.animated6{
-    animation: moveInBottom .4s ease-out;
-    visibility: visible;
-}
-
 .animated4{/*
     top: 29rem;*/
     top: 35vh;
@@ -95,6 +90,7 @@
     font-size: .2rem;
     text-align: left;
     visibility: hidden;
+    z-index: 10;
 }
 
 .animated9{
@@ -141,6 +137,11 @@
     top: 10;
     transform: translateX(-50%) translateY(-62%);
     transition: all .5s cubic-bezier(0,0,0,1);
+}
+
+.animated6{
+    animation: moveInBottom .4s ease-out;
+    visibility: visible;
 }
 
 @media only screen and (max-width: 75em){

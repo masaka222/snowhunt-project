@@ -58,6 +58,10 @@ class MainContent extends Component {
       setTimeout(function() {
           document.getElementById('gridimage').classList.add('animated9')
           },2100)
+
+      setTimeout(function() {
+          document.getElementById('gridtext').classList.add('animated6')
+          },2500)
     }
 
     return (
