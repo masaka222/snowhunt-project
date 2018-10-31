@@ -36,12 +36,6 @@
     visibility: hidden;
 }
 
-.animated4{/*
-    top: 29rem;*/
-    top: 35vh;
-    transition: top .5s cubic-bezier(0,0,0,1);
-}
-
 .main-video__content{
     position: absolute;
     margin: auto;
@@ -51,17 +45,6 @@
     height: auto;
     width: 110%;
     object-fit: cover;
-}
-
-.animated3{
-    animation: image-movement .6s forwards ease-in-out;
-}
-.animated7{
-    overflow: visible;
-    animation: image-movement2 .5s forwards ease-in-out;
-}
-.animated8{
-    background-color: white;
 }
 
 /* ----  GRID ---- */
@@ -93,15 +76,56 @@
     z-index: 10;
 }
 
-.animated9{
+/* ----  ANIMATED CLASSES ---- */
+
+.animated3MoveLeftAndScale{
+    animation: move-left-and-scale-animation .6s forwards ease-in-out;
+}
+
+.animated4CloudUp{
+    top: 35vh;
+    transition: top .5s cubic-bezier(0,0,0,1);
+}
+
+.animated5VideoUp{
+    top: 10;
+    transform: translateX(-50%) translateY(-62%);
+    transition: all .5s cubic-bezier(0,0,0,1);
+}
+
+.animated6TextUp{
+    animation: moveInBottom .4s ease-out;
+    visibility: visible;
+}
+
+.animated7ContainerUp{
+    overflow: visible;
+    animation: image-movement2 .5s forwards ease-in-out;
+}
+.animated8BackgroundColorChange{
+    background-color: white;
+}
+
+.animated9ImageAnimation{
     opacity: 1;
     transform: translateX(-1.5rem) scale(1);
     visibility: visible;
     transition: all .5s cubic-bezier(0,0,0,1) .2s;
 }
+
+/* ---- MEDIA QUERIES ---- */
+
+@media only screen and (max-width: 75em){
+    .animated4CloudUp{
+        top: 41vh;
+    }
+}
+
+
+
 /* ---- ANIMATIONS ---- */
 
-@keyframes image-movement{
+@keyframes move-left-and-scale-animation{
     50%{
         transform: translateX(-25%);
     }
@@ -130,22 +154,5 @@
     100%{
         opacity: 1;
         transform: translate(0);
-    }
-}
-
-.animated5{
-    top: 10;
-    transform: translateX(-50%) translateY(-62%);
-    transition: all .5s cubic-bezier(0,0,0,1);
-}
-
-.animated6{
-    animation: moveInBottom .4s ease-out;
-    visibility: visible;
-}
-
-@media only screen and (max-width: 75em){
-    .animated4{
-        top: 41vh;
     }
 }
