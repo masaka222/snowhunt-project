@@ -19,10 +19,14 @@
 .header__search{
     display: flex;
     align-items: center;
+
+    position: relative;
+    margin-right: 1.5rem;
+    height: 100px; /* bigger than your svg */
+    width: 100px; /* bigger than your svg */
 }
 
 .magnifying-icon{
-    margin-right: 1.5rem;
     margin-left: 1.5rem;
 }
 
