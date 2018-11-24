@@ -51,19 +51,19 @@
 .main-video__grid{
     margin-top: 400px;
     padding: 15rem;
-    padding-left: 20rem;
-    padding-right: 25rem;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5rem;
 }
 
 .main-video__grid-shape{
+    justify-self: center;
     overflow: hidden;
     width: 16.5rem;
     height: 25rem;
 }
 .main-video__grid-image{
+    display: block;
     height: 100%;
     opacity: 0;
     transform: translateX(-1.5rem) scale(2);
