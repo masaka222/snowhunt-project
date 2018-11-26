@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/snowhunt-project/static/js/runtime~main.891e8b62.js"
   },
   {
-    "revision": "41e50e4db43e15c456de",
-    "url": "/snowhunt-project/static/js/main.41e50e4d.chunk.js"
+    "revision": "ed69ebcdd666d5f08681",
+    "url": "/snowhunt-project/static/js/main.ed69ebcd.chunk.js"
   },
   {
     "revision": "aae8fc2bc6427ccc4a18",
     "url": "/snowhunt-project/static/js/1.aae8fc2b.chunk.js"
   },
   {
-    "revision": "41e50e4db43e15c456de",
-    "url": "/snowhunt-project/static/css/main.34be407a.chunk.css"
+    "revision": "ed69ebcdd666d5f08681",
+    "url": "/snowhunt-project/static/css/main.cfa02fff.chunk.css"
   },
   {
-    "revision": "d759783a5690c8db40191e210599e03e",
+    "revision": "b0a8e8afe84e885340db6862936838bc",
     "url": "/snowhunt-project/index.html"
   }
 ];

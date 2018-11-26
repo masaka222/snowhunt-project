@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/snowhunt-project/precache-manifest.3e8faea2c181909c138cf3cb01135a24.js"
+  "/snowhunt-project/precache-manifest.d5454d0a6f3c52587e8a96cc89158411.js"
 );
 
 workbox.clientsClaim();
